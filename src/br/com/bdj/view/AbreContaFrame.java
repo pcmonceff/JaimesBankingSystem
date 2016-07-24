@@ -10,11 +10,11 @@ import javax.swing.JLabel;
 import javax.swing.JTextField;
 import javax.swing.SwingConstants;
 
-public class AbrirContaFrame extends JFrame {
+public class AbreContaFrame extends JFrame {
 
 	private static final long serialVersionUID = 1L;
 
-	public AbrirContaFrame() {  
+	public AbreContaFrame() {
 		super("Abrir Conta");
 		
 		Container container = getContentPane();

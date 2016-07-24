@@ -1,8 +1,6 @@
 package br.com.bdj.view;
 
-import java.awt.BorderLayout;
 import java.awt.Container;
-import java.awt.FlowLayout;
 import java.awt.GridLayout;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
@@ -10,8 +8,6 @@ import java.awt.event.ActionListener;
 import javax.swing.JButton;
 import javax.swing.JFrame;
 import javax.swing.JLabel;
-import javax.swing.JTextArea;
-import javax.swing.JTextField;
 import javax.swing.SwingConstants;
 
 public class MenuFrame extends JFrame{
@@ -55,7 +51,7 @@ public class MenuFrame extends JFrame{
 	
 	private void onClickAbrirConta()
 	{
-		AbrirContaFrame criaContaFrame = new AbrirContaFrame();
+		AbreContaFrame criaContaFrame = new AbreContaFrame();
 		criaContaFrame.setDefaultCloseOperation(DISPOSE_ON_CLOSE);
 	}
 	
