@@ -1,5 +1,7 @@
 package br.com.bdj.view;
 
+import br.com.bdj.controller.AbreContaHandler;
+
 import java.awt.Container;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
@@ -67,8 +69,8 @@ public class AbreContaFrame extends JFrame {
 			
 			@Override
 			public void actionPerformed(ActionEvent e) {
-				System.out.println("Abrindo Conta");
-				
+				AbreContaHandler abreContaHandler = new AbreContaHandler();
+				abreContaHandler.criaConta(txtCodigo.getText(), txtSenha.getText(), txtSaldo.getText());
 			}
 		});
 		

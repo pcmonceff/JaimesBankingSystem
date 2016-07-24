@@ -1,6 +1,8 @@
 package br.com.bdj.model;
 
-public class Conta {
+import java.io.Serializable;
+
+public class Conta implements Serializable {
 	private int codigo;
 	private int senha; 
 	private float saldo;
@@ -22,6 +24,14 @@ public class Conta {
 		
 	}
 
+	@Override
+	public String toString() {
+		return "Conta{" +
+				"codigo=" + codigo +
+				", senha=" + senha +
+				", saldo=" + saldo +
+				'}';
+	}
 
 	public int getCodigo() {
 		return codigo;
